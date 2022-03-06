@@ -8230,7 +8230,7 @@ h1, h2, h3, h4, h5,
 
 .ftco-navbar-light {
   background: transparent !important;
-  z-index: 3;
+  z-index: -1;
   padding: 0; }
   .ftco-navbar-light .container {
     background: #0d1128;
