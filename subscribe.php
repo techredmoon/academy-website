@@ -39,8 +39,9 @@
 					$headers2 = "From:" . $to;
 					$headers = "From:" . $from;
 					$headers = "From: Shourya Academy info@ztesting.shouryaacademyedu.com";
+					$headers = 'From: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'Reply-To: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 					//mail($to,$subject,$message2);
-					mail($to,$subject,$message); // sends a copy of the message to the sender
+					mail($to,$subject,$message, $headers); // sends a copy of the message to the sender
 					//echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
 				}
 			}	
