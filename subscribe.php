@@ -28,21 +28,16 @@
 				$t = mysqli_query($db, $query);
 				//echo $t;
 				if($t){
-					echo "Successful";
+					echo "Successful....";
 					$from = "info@ztesting.shouryaacademyedu.com"; // this is your Email address
 					$to = $_POST['email']; // this is the sender's Email address
 					$subject = "Form Submission Confirmation";
-					//$subject2 = "Copy of your form submission";
-					$message = "Hi,\n\n Greetings From Shourya Academy\n\n Thanks for your subprition and we appericiate you to reach out us.\n\nWe will get back to you soon.\n\n\n\n\n\n\n\n\n\nCheers\nShourya Academy\n\nFor any query please feel free to connect us (cell:+91 9798451257)";
-					//$message2 = "Hi,\n" . $_POST['email'] . "  sends some request------\n" . $_POST['message'];
-					$headers = "SolveMathQ:".$from;
-					$headers2 = "From:" . $to;
-					$headers = "From:" . $from;
-					$headers = "From: Shourya Academy info@ztesting.shouryaacademyedu.com";
+					$message = "Dear,\n\n Greetings From Shourya Academy!\n\n Thanks for subscribing us and we are really appreciate to reach out to us.\n\nPlease have a patience, we will get back to you soon.\n\nFor any query please feel free to connect us (cell:+91 9798451257)\n\n\n\n\n\n\n\nCheers\nShourya Academy\nAddress: New Colony, Jharna Tola,\nKunrathat New Kalawati Marriage Hall,\nGorakhpur, Uttar Pradesh";
+					$message2 = "Hi,\n" . $_POST['email'] . "  sends some enquiry request------\nPlease connect with the sender.";
 					$headers = 'From: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'Reply-To: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-					//mail($to,$subject,$message2);
+					
 					mail($to,$subject,$message, $headers); // sends a copy of the message to the sender
-					//echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+					mail($from,$subject,$message2);
 				}
 			}	
 		}	
@@ -58,7 +53,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Simple Success Confirmation Popup</title>
+<title>Shourya Academy | Subscribe</title>
 <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
