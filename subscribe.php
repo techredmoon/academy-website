@@ -31,7 +31,7 @@
 					echo "Successful....";
 					$from = "info@ztesting.shouryaacademyedu.com"; // this is your Email address
 					$to = $_POST['email']; // this is the sender's Email address
-					$subject = "Form Submission Confirmation";
+					$subject = "Thanks For Subscription!!!";
 					$message = "Dear,\n\n Greetings From Shourya Academy!\n\n Thanks for subscribing us and we are really appreciate to reach out to us.\n\nPlease have a patience, we will get back to you soon.\n\nFor any query please feel free to connect us (cell:+91 9798451257)\n\n\n\n\n\n\n\nCheers\nShourya Academy\nAddress: New Colony, Jharna Tola,\nKunrathat New Kalawati Marriage Hall,\nGorakhpur, Uttar Pradesh";
 					$message2 = "Hi,\n" . $_POST['email'] . "  sends some enquiry request------\nPlease connect with the sender.";
 					$headers = 'From: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'Reply-To: info@ztesting.shouryaacademyedu.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
