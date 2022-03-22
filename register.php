@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
+  <title>Query | Shourya Academy</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
@@ -148,6 +148,10 @@ form, .content {
     margin-bottom: 30px;
 }
 
+span{
+    color: red;
+}
+
   </style>
 </head>
 <body>
@@ -168,16 +172,16 @@ form, .content {
   <form method="post" action="register.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
-  	  <label>Student Name</label>
+  	  <label>Student Name<span>*</span></label>
   	  <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Enter your name ...">
   	</div>
   	<div class="input-group">
-  	  <label>Email</label>
+  	  <label>Email<span>*</span></label>
   	  <input type="email" name="email" value="<?php echo $email; ?>" placeholder="Enter your email ...">
       </div>
 
       <div class="input-group">
-  	  <label>Phone Number</label>
+  	  <label>Phone Number<span>*</span></label>
   	  <input type="text" name="phone" value="<?php echo $email; ?>" placeholder="Enter your phone no ...">
       </div>
     <div class="input-group">
