@@ -77,7 +77,7 @@ body {
 }
 
 .header {
-  width: 30%;
+  width: 70%;
   margin: 50px auto 0px;
   color: white;
   background: #5F9EA0;
@@ -88,7 +88,7 @@ body {
   padding: 20px;
 }
 form, .content {
-  width: 30%;
+  width: 70%;
   margin: 0px auto;
   padding: 20px;
   border: 1px solid #B0C4DE;
@@ -169,20 +169,20 @@ form, .content {
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label>Student Name</label>
-  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	  <input type="text" name="username" value="<?php echo $username; ?>" placeholder="Enter your name ...">
   	</div>
   	<div class="input-group">
   	  <label>Email</label>
-  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	  <input type="email" name="email" value="<?php echo $email; ?>" placeholder="Enter your email ...">
       </div>
 
       <div class="input-group">
   	  <label>Phone Number</label>
-  	  <input type="text" name="phone" value="<?php echo $email; ?>">
+  	  <input type="text" name="phone" value="<?php echo $email; ?>" placeholder="Enter your phone no ...">
       </div>
     <div class="input-group">
   	  <label>Your Class</label>
-  	  <input type="text" name="class" value="<?php echo $email; ?>">
+  	  <input type="text" name="class" value="<?php echo $email; ?>" placeholder="Enter your Class ...">
   	</div>
   	<!-- <div class="input-group">
   	  <label>Query</label>
@@ -190,15 +190,15 @@ form, .content {
   	</div> -->
   	<div class="input-group">
   	  <label>Query</label>
-        <textarea name="password_2" id="" cols="52" rows="10"></textarea>
-  	  <!-- <input type="password" name="password_2"> -->
+        <!-- <textarea name="password_2" id="" class="input-group"></textarea> -->
+  	  <input type="text" name="password_2" style="height: 100px" placeholder="Write your query ...">
   	</div>
   	<div class="input-group">
-  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	  <button type="submit" class="btn" name="reg_user">Submit</button>
   	</div>
-  	<p>
+  	<!-- <p>
   		Already a member? <a href="login.php">Sign in</a>
-  	</p>
+  	</p> -->
   </form>
 </div>
 </body>
